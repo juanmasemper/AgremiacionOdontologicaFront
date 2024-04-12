@@ -1,0 +1,267 @@
+#altaEntrega {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+#columna-2 {
+  display: flex;
+  justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+#desde,
+#hasta {
+  width: 28%; /* Ajustar el ancho según sea necesario */
+  margin: 0 -20px; /* Agregar margen entre los elementos */
+}
+
+input[type="number"] {
+  width: calc(50% - 40px); /* Ajustar el ancho del input */
+  padding: 5px;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  background-size: 24px;
+}
+td{
+  align-items: center;
+}
+.flex{
+  display: felx;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  background-color: #9933ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: -5px;
+  margin-bottom: 5%;
+}
+
+button:hover {
+  background-color: #6a00d5;
+}
+
+#volver {
+  background-color: #f44336;
+}
+
+#volver:hover {
+  background-color: #d32f2f;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos generales */
+.lista {
+margin: 20px auto;
+max-width: 800px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+background-color: #f9f9f9;
+}
+
+/* Estilos para los títulos */
+#lista-titulo {
+color: #333;
+margin-bottom: 10px;
+text-align: center;
+}
+
+/* Contenedor de búsqueda */
+.lista input[type="text"] {
+
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 15px;
+box-sizing: border-box;
+}
+
+/* Botón de añadir entrega */
+.lista button {
+background-color: #9933ff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+float: right; /* Coloca el botón a la derecha */
+}
+
+.lista button:hover {
+background-color: #6a00d5;
+}
+
+/* Estilos para la tabla */
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.table th,
+.table td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+
+.table th {
+background-color: #9933ff;
+color: white;
+}
+
+.table tbody tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+background-color: #ddd;
+}
+
+/* Estilos para los botones de editar y borrar */
+.table button {
+background-color: #f44336;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+margin-right: 5px;
+}
+
+.table button:hover {
+background-color: #d32f2f;
+}
+
+
+#volver {
+
+bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+right: 20px; /* Ajusta la distancia desde la derecha */
+background-color: #9933ff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin:5%;
+}
+#guardar {
+
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  background-color: #9933ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:5%;
+  }
+
+#volver:hover {
+background-color: #6a00d5;
+}
+.botones-flex{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+#link {
+color: #ffffff; /* Cambia el color del texto del enlace a negro */
+text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+
+#obrasocial{
+display: inline-block;
+text-align: center;
+}
+#botoncito{
+  margin-top: 17.5%;
+}
+.boton{
+  margin-left: 30%;
+}
+
+#alinear{
+  display: flex;
+  flex-direction: row;
+}
+#odontologo {
+  position: relative; /* Establece una posición relativa */
+}
+
+#odontologo ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5%;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  position: absolute; /* Establece una posición absoluta */
+  top: 100%; /* Coloca el contenedor debajo del input */
+  left: 0; /* Alinea el contenedor con el borde izquierdo del input */
+}
+
+
+
+#odontologo ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #e9e9e9;
+}
+
+#odontologo ul li:hover {
+  background-color: #f0f0f0;
+}
+
+#odontologo,#obrasocial{
+ margin: 4%;
+}
+#boton2{
+  margin-left:5%;
+}
+
+/* Media query para ajustar el ancho en pantallas más pequeñas */
+@media (min-width: 600px) {
+#odontologo, #obrasocial, #añadirentrega {
+  width: calc(33% - 1px); /* Calcula el ancho para que estén uno al lado del otro */
+}
+}
